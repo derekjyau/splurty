@@ -1,4 +1,7 @@
+<script>window.__theme = 'bs4';</script>
+
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>Splurty</title>
@@ -29,10 +32,24 @@
       </div>
 
       <div class="col-5 links">
-        <%= link_to 'Contribute', new_quote_path %>
-        <%= link_to 'About', '#' %>
+        <!-- Button trigger modal -->
+        <%= link_to 'Add Quote', '#', data: {toggle: 'modal', target: '#exampleModal'} %>
+        <%= link_to 'About', about_path %>
       </div>
     </header>
+
+    <div class="modal hide fade" id="exampleModal" title="My modal">
+      <div class="modal-header">
+        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+      </div>
+      <div class="modal-body">
+        Modal Body
+      </div>
+      <div class="modal-footer">
+        <button aria-hidden="true" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
 
     <hr />
 
