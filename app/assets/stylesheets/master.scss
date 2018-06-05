@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 .clear {
   
@@ -49,3 +50,12 @@ header {
 hr {
   clear:both;
 }
+
+h1 {
+  font-family: "Overpass", sans-serif;
+}
+
+h2 {
+  font-family: "Overpass", sans-serif;
+}
+
