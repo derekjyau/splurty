@@ -8,7 +8,10 @@ class QuotesController < ApplicationController
   end
 
   def create
-    Quote.create(quote_params)
+    @quote = Quote.create(quote_params)
+    if @quote.invalid?
+      flash[:error] = '<strong>The data you entered is invalid. Quotes must be between 3 and 140 characters long.</strong>'
+     end
     redirect_to root_path
   end
 
