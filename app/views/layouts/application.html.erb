@@ -1,7 +1,4 @@
-<script>window.__theme = 'bs4';</script>
-
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>Splurty</title>
@@ -27,29 +24,17 @@
         <% end %>
       </div>
 
-      <div class="col-4 slogan">
-        Just a simple quote generator
+      <div class="col col-sm-4 hidden-xs-down slogan">
+        Presenting you with random quotes since 2018!
       </div>
 
-      <div class="col-5 links">
-        <!-- Button trigger modal -->
-        <%= link_to 'Add Quote', '#', data: {toggle: 'modal', target: '#exampleModal'} %>
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
+        <%= link_to 'Add Quote', new_quote_path %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
     </header>
 
-    <div class="modal hide fade" id="exampleModal" title="My modal">
-      <div class="modal-header">
-        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
-        <h3 id="myModalLabel">Modal header</h3>
-      </div>
-      <div class="modal-body">
-        Modal Body
-      </div>
-      <div class="modal-footer">
-        <button aria-hidden="true" class="btn" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
     <hr />
 
@@ -67,10 +52,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "Click here for a different quote!", root_path, class: "next-quote" %>
           </div>
-          <div class= "col-6 footer-blurb">
+          <div class= "col-12 col-sm-6 footer-blurb">
             Created by yours truly, <a href="http:thefirehoseproject.com">Derek Yau</a><br />
           </div>
         </div>
